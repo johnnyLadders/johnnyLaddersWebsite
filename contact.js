@@ -16,6 +16,8 @@ $(document).ready(function() {
         $('.button').toggleClass('buttonToggle');
 
         /*Contact*/
+        $('.emailOne').toggleClass('emailOneToggle');
+        $('.emailTwo').toggleClass('emailTwoToggle');
 
     });
 

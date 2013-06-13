@@ -20,7 +20,6 @@
 	color: black;
 	width: 90px;
 	height: 45px;
-	font-family: helvetica;
 	text-align: center;
 	display: table-cell;
 	vertical-align: middle;
@@ -34,19 +33,18 @@
 }
 
 .button:hover{
-	font-weight: bold;
 
 	/*Border*/
 	border-color: black;
 	border-style: dashed;
 	border-width: 2px;
+	border-radius: 4px;
 }
 
 .buttonToggle {
 	color: white;
 	width: 90px;
 	height: 45px;
-	font-family: helvetica;
 	text-align: center;
 	display: table-cell;
 	vertical-align: middle;
@@ -54,19 +52,19 @@
 	/*Border*/
 	border-color: white;
 	border-style: dashed;
-	border-width: 1px;
+	border-width: 2px;
 	border-radius: 4px;
 
 }
 
 .buttonToggle:hover{
-	font-weight: bold;
-	height: 40px;
+	height: 45px;
 
 	/*Border*/
 	border-color: white;
 	border-style: dashed;
-	border-width: 2px;
+	border-width: 1px;
+	border-radius: 4px;
 }
 
 
@@ -96,10 +94,12 @@
 }
 
 p {
+	font-family: helvetica;
 	font-size: 15px;
 }
 
 a {
+	text-decoration:none;
 	color: black;
 }
 
@@ -113,4 +113,45 @@ a:visited {
 
 .bodyWhite {
 	background-color: white;
+}
+
+#contact {
+
+	position: absolute;
+
+	width: 60px;
+	height: 54px;
+
+	padding-top: 6px;
+
+	border-radius: 30px;
+
+	left: 100%;
+	top: 0%;
+	margin-left: -70px;
+	margin-top: 10px;
+}
+
+.emailOne {
+	font-family: helvetica;
+	color:black;
+	z-index: -1;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -122px;
+	margin-top: 233px;
+}
+
+.emailOneToggle {
+	color:white;
+	font-family: helvetica;
+
+	z-index: -1;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -122px;
+	margin-top: 233px;
 }

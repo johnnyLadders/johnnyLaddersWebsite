@@ -1,0 +1,59 @@
+#logo{
+	width: 300px;
+	height: 474px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -272px;
+}
+
+.button {
+	color: black;
+	width: 90px;
+	height: 45px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+
+	/*Border*/
+	border-color: black;
+	border-style: dashed;
+	border-width: 1px;
+	border-radius: 4px;
+
+}
+
+.button:hover{
+	font-weight: bold;
+
+	/*Border*/
+	border-color: black;
+	border-style: dashed;
+	border-width: 2px;
+}
+
+#back {
+
+	position: absolute;
+
+	width: 60px;
+	height: 54px;
+
+	padding-top: 6px;
+
+	border-radius: 30px;
+
+	left: 100%;
+	top: 0%;
+	margin-left: -70px;
+	margin-top: 10px;
+}
+
+.start {
+	background-color: white;
+}
+
+.toggle {
+	background-color: black;
+}
