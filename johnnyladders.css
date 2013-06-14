@@ -52,7 +52,7 @@
 	/*Border*/
 	border-color: white;
 	border-style: dashed;
-	border-width: 2px;
+	border-width: 1px;
 	border-radius: 4px;
 
 }
@@ -63,7 +63,7 @@
 	/*Border*/
 	border-color: white;
 	border-style: dashed;
-	border-width: 1px;
+	border-width: 2px;
 	border-radius: 4px;
 }
 
