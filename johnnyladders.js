@@ -1,11 +1,27 @@
 var emailHidden = 1;
+
 $(document).ready(function() {
-	$('#video').hide();
-    $('#graphics').hide();
-    $('#code').hide(); 
+
+	//Buttons
+	$videoButton = $('#video');
+	$graphicsButton = $('#graphics');
+	$codeButton = $('#code');
+	$portfolioButton = $('#portfolio');
+
+	//email
+	$emailOne = $('.emailOne');
+
+	//initially hide buttons
+	$videoButton.hide();
+    $graphicsButton.hide();
+    $codeButton.hide(); 
+
+    //Logos
+    $logoRed = $('#logoRed');
+    $logoGreen = $('#logoGreen');
 
 
-	/*contact*/
+
     $('#logoWhite').click(function() {
     	/*Logo*/
         if(document.getElementById("logoWhite").getAttribute("src") == "img/logoWhite.png"){
@@ -26,17 +42,14 @@ $(document).ready(function() {
     });
 
     $('#contact').click(function() {
-/*    	$('#video').toggle();
-    	$('#graphics').toggle();
-    	$('#code').toggle(); */
 
     	if(emailHidden == 0){
-    		$('.emailOne').animate({"opacity":'0.0'}, 250);
-    		$('.emailOne').animate({"margin-top":'-35px'}, 1);
-    		$('.emailOne').animate({"opacity":'1.0'}, 1);
+    		$emailOne.animate({"opacity":'0.0'}, 250);
+    		$emailOne.animate({"margin-top":'-35px'}, 1);
+    		$emailOne.animate({"opacity":'1.0'}, 1);
 			emailHidden = 1;
     	}else{
-    		$('.emailOne').animate({"margin-top":'16px'}, 500)
+    		$emailOne.animate({"margin-top":'16px'}, 500)
 			emailHidden = 0;
 		}
     	
@@ -50,29 +63,29 @@ $(document).ready(function() {
 
     });
 
-    $('#portfolio').click(function() {
+    $portfolioButton.click(function() {
     	if($('#portfolio p').html() == "Portfolio"){
     		$('#portfolio p').html('Hide');
 
-    		$('#portfolio').animate({'margin-top':'+=55'}, 300);
-    		$('#portfolio').animate({'opacity':'-=0.65'}, 300);
-    		$('#logoRed').animate({'margin-left':'+=100'}, 300);
-    		$('#logoGreen').animate({'margin-left':'-=100'}, 300);
+    		$portfolioButton.animate({'margin-top':'+=55'});
+    		$portfolioButton.animate({'opacity':'-=0.65'});
+    		$logoRed.animate({'margin-left':'+=100'});
+    		$logoGreen.animate({'margin-left':'-=100'});
 
-    		$('#video').show();
-    		$('#graphics').show();
-    		$('#code').show(); 
+    		$videoButton.show();
+    		$graphicsButton.show();
+    		$codeButton.show(); 
     	}else{
     		$('#portfolio p').html('Portfolio');
 
-    		$('#portfolio').animate({'margin-top':'-=55'}, 300);
-    		$('#portfolio').animate({'opacity':'+=0.65'}, 300);
-    		$('#logoRed').animate({'margin-left':'-=100'}, 300);
-    		$('#logoGreen').animate({'margin-left':'+=100'}, 300);
+    		$portfolioButton.animate({'margin-top':'-=55'});
+    		$portfolioButton.animate({'opacity':'+=0.65'});
+    		$logoRed.animate({'margin-left':'-=100'});
+    		$logoGreen.animate({'margin-left':'+=100'});
 
-    		$('#video').hide();
-    		$('#graphics').hide();
-    		$('#code').hide(); 
+    		$videoButton.hide();
+    		$graphicsButton.hide();
+    		$codeButton.hide(); 
 
     	}
     });
