@@ -1,13 +1,17 @@
 var emailHidden = 1;
 $(document).ready(function() {
+	$('#video').hide();
+    $('#graphics').hide();
+    $('#code').hide(); 
+
+
 	/*contact*/
-	$('#contact').fadeIn('slow');
-    $('img').click(function() {
+    $('#logoWhite').click(function() {
     	/*Logo*/
-        if(document.getElementById("logo").getAttribute("src") == "img/blackLogo.png"){
-        	document.getElementById("logo").setAttribute("src","img/whiteLogo.png")
+        if(document.getElementById("logoWhite").getAttribute("src") == "img/logoWhite.png"){
+        	document.getElementById("logoWhite").setAttribute("src","img/logoBlack.png");
         }else{
-        	document.getElementById("logo").setAttribute("src","img/blackLogo.png")
+        	document.getElementById("logoWhite").setAttribute("src","img/logoWhite.png");
         }
 
     	/*Background*/
@@ -44,6 +48,33 @@ $(document).ready(function() {
     		$('#contact p').html('Contact');
     	}
 
+    });
+
+    $('#portfolio').click(function() {
+    	if($('#portfolio p').html() == "Portfolio"){
+    		$('#portfolio p').html('Hide');
+
+    		$('#portfolio').animate({'margin-top':'+=55'}, 300);
+    		$('#portfolio').animate({'opacity':'-=0.65'}, 300);
+    		$('#logoRed').animate({'margin-left':'+=100'}, 300);
+    		$('#logoGreen').animate({'margin-left':'-=100'}, 300);
+
+    		$('#video').show();
+    		$('#graphics').show();
+    		$('#code').show(); 
+    	}else{
+    		$('#portfolio p').html('Portfolio');
+
+    		$('#portfolio').animate({'margin-top':'-=55'}, 300);
+    		$('#portfolio').animate({'opacity':'+=0.65'}, 300);
+    		$('#logoRed').animate({'margin-left':'-=100'}, 300);
+    		$('#logoGreen').animate({'margin-left':'+=100'}, 300);
+
+    		$('#video').hide();
+    		$('#graphics').hide();
+    		$('#code').hide(); 
+
+    	}
     });
 
 
