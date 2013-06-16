@@ -69,8 +69,8 @@ $(document).ready(function() {
 
     		$portfolioButton.animate({'margin-top':'+=55'});
     		$portfolioButton.animate({'opacity':'-=0.65'});
-    		$logoRed.animate({'margin-left':'+=100'});
-    		$logoGreen.animate({'margin-left':'-=100'});
+    		$logoRed.animate({'margin-left':'+=77'});
+    		$logoGreen.animate({'margin-left':'-=77'});
 
     		$videoButton.show();
     		$graphicsButton.show();
@@ -80,8 +80,8 @@ $(document).ready(function() {
 
     		$portfolioButton.animate({'margin-top':'-=55'});
     		$portfolioButton.animate({'opacity':'+=0.65'});
-    		$logoRed.animate({'margin-left':'-=100'});
-    		$logoGreen.animate({'margin-left':'+=100'});
+    		$logoRed.animate({'margin-left':'-=77'});
+    		$logoGreen.animate({'margin-left':'+=77'});
 
     		$videoButton.hide();
     		$graphicsButton.hide();
