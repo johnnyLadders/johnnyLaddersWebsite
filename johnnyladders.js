@@ -86,7 +86,6 @@ $(document).ready(function() {
     		$videoButton.hide();
     		$graphicsButton.hide();
     		$codeButton.hide(); 
-
     	}
     });
 

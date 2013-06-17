@@ -57,17 +57,11 @@
 
 }
 
-.button:hover{
-	z-index: 50;
-	height: 45px;
+.button:hover {
+	font-weight: bold;
+	border-style: solid;
 
-	/*Border*/
-	border-color: white;
-	border-style: dashed;
-	border-width: 2px;
-	border-radius: 4px;
 }
-
 
 .buttonToggle {
 	z-index: 50;
@@ -86,17 +80,14 @@
 
 }
 
-.buttonToggle:hover{
+.buttonToggle:hover {
+	font-weight: bold;
+	border-style: solid;
 
-	z-index: 50;
-	/*Border*/
-	border-color: black;
-	border-style: dashed;
-	border-width: 2px;
-	border-radius: 4px;
+
 }
 
-#video{
+#code{
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -115,9 +106,10 @@
 
 #graphics:hover {
 	border-color: #00f3d6;
+	color: #00f3d6;
 }
 
-#code{
+#video{
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -125,8 +117,9 @@
 	margin-top: 232px;
 }
 
-#code:hover{
+#video:hover{
 	border-color: #ee3278;
+	color: #ee3278;
 }
 
 p {
@@ -206,3 +199,4 @@ a:visited {
 	margin-left: -150px;
 	margin-top: 232px;
 }
+
